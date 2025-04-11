@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,25 +10,38 @@ import GlowCard from "../components/GlowCard";
 gsap.registerPlugin(ScrollTrigger);
 
 const Testimonials = () => {
-  useGSAP(() => {
-    // Loop through each milestone card and animate them in
-    // as the user scrolls to each card
-    gsap.utils.toArray(".milestone-card").forEach((card, index) => {
-      // Animate the card coming in from the left and fade in
-      gsap.from(card, {
-        xPercent: -100, // Move the card in from the left
-        opacity: 0, // Make the card invisible at the start
-        transformOrigin: "left left", // Set the origin of the animation to the left side
-        duration: 1, // Animate over 1 second
-        ease: "power2.inOut", // Use a power2 ease-in-out curve
-        scrollTrigger: {
-          trigger: card, // The card is the trigger element
-          start: "top 80%", // Trigger the animation when the card is 80% down the screen
-        },
-        delay: index * 0.2, // Stagger the animations by 0.2 seconds for each card
-      });
-    });
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Automatically cycle through milestones every 2 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2000); // 2 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
   }, []);
+
+  // GSAP animation for the banner
+  useGSAP(() => {
+    gsap.from(".banner-card", {
+      xPercent: -100, // Slide in from the left
+      opacity: 0, // Fade in
+      transformOrigin: "left left",
+      duration: 1,
+      ease: "power2.inOut",
+      scrollTrigger: {
+        trigger: ".banner-card",
+        start: "top 80%",
+      },
+    });
+  }, [currentIndex]); // Re-run animation when currentIndex changes
+
+  // Handle manual navigation via dots
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
+  };
 
   return (
     <section id="testimonials" className="flex-center section-padding">
@@ -37,17 +51,44 @@ const Testimonials = () => {
           sub="📚 Key Milestones in My Growth"
         />
 
-        <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
-          {testimonials.map((testimonial, index) => (
-            <GlowCard card={testimonial} key={index} index={index} className="milestone-card">
-              <div className="flex items-center gap-3">
-                <div>
-                  <p className="font-bold">{testimonial.name}</p>
-                  <p className="text-white-50">{testimonial.mentions}</p>
+        <div className="mt-16">
+          {/* Banner Container */}
+          <div className="relative w-full">
+            {/* Logo */}
+            <div className="absolute top-4 left-4 z-10">
+              <img
+                src="/images/learning-logo.png" // Placeholder path for the logo
+                alt="Learning Journey Logo"
+                className="w-12 h-12"
+              />
+            </div>
+
+            {/* Banner Card */}
+            <GlowCard
+              card={testimonials[currentIndex]}
+              className="banner-card w-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="flex items-center gap-3">
+                  <p className="font-bold text-lg">{testimonials[currentIndex].name}</p>
+                  <p className="text-white-50 text-sm">{testimonials[currentIndex].mentions}</p>
                 </div>
               </div>
             </GlowCard>
-          ))}
+
+            {/* Navigation Dots */}
+            <div className="flex justify-center gap-2 mt-4">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleDotClick(index)}
+                  className={`w-3 h-3 rounded-full ${
+                    currentIndex === index ? "bg-[#915EFF]" : "bg-gray-400"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

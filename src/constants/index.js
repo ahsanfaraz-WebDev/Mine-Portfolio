@@ -243,18 +243,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    url: "https://www.instagram.com/ahsan_faraz.17/?next=%2F", // Replace with your Instagram URL
   },
   {
     name: "fb",
-    imgPath: "/images/fb.png",
+    imgPath: "/images/github.png",
+    url: "https://github.com/ahsanfaraz-WebDev", // Replace with your Facebook URL
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    url: "https://www.x.com/your_x_username", // Replace with your X URL
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/ahsan-faraz-34138b319/", // Replace with your LinkedIn URL
   },
 ];
 
