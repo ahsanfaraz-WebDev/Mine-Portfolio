@@ -4,7 +4,7 @@ const navLinks = [
     link: "#work",
   },
   {
-    name: "Experience",
+    name: "Projects",
     link: "#experience",
   },
   {
@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 7, suffix: "+", label: "Project Build" },
+  { value: 12, suffix: "+", label: "Technologies Mastered" },
+  { value: 1, suffix: "+", label: "Certificate Earned" },
+  { value: 1, suffix: "+", label: "Academic Achievements" },
 ];
 
 const logoIconsList = [
@@ -144,46 +144,44 @@ const techStackIcons = [
     rotation: [0, -Math.PI / 4, 0],
   },
 ];
-
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    review: "Ahsan’s work on ElevateX demonstrates his ability to build scalable, enterprise-ready applications with modern technologies, delivering a seamless user experience.",
+    imgPath: "/images/exp1.png", // You’ll change this
+    logoPath: "/images/logo1.png", // You’ll change this
+    title: "ElevateX: Startup Directory Platform",
+    date: "Feb 2025",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Designed a full-stack platform using Next.js 15, Sanity, and Tailwind CSS to showcase startup profiles.",
+      "Utilized Next.js features like Server/Client Components, dynamic routing, and data-fetching methods (SSR, SSG, ISR, PPR).",
+      "Integrated Sanity for content management and NextAuth for secure authentication, enhancing SEO with Next.js Metadata.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    review: "Ahsan’s Forever E-Commerce project showcases his full-stack development skills, creating a responsive and user-friendly platform for online shopping.",
+    imgPath: "/images/exp2.png", // You’ll change this
+    logoPath: "/images/logo2.png", // You’ll change this
+    title: "Forever E-Commerce Website",
+    date: "Dec 2024",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed a MERN stack e-commerce platform with React, Node.js, Express, and MongoDB.",
+      "Implemented features like user authentication, product search, cart management, and order tracking.",
+      "Focused on creating a visually appealing design and responsive layout for an enhanced user experience.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    review: "Ahsan’s Movie Recommendation System highlights his ability to build functional backend systems with a focus on user engagement and seamless API integration.",
+    imgPath: "/images/exp3.png", // You’ll change this
+    logoPath: "/images/logo3.png", // You’ll change this
+    title: "Movie Recommendation System",
+    date: "Mar 2024",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Built a recommendation system using Node.js and MongoDB to suggest movies based on user preferences.",
+      "Integrated MongoDB to manage user data, movies, and recommendation history, with API testing via Postman.",
+      "Designed the application for a seamless and engaging user experience.",
     ],
   },
 ];
-
 const expLogos = [
   {
     name: "logo1",

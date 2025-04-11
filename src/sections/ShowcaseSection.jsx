@@ -53,12 +53,10 @@ const AppShowcase = () => {
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+              Startup Pitches Amplified with a Sleek, Minimalistic Platform called ElevateX
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+              A platform Built with Next.js 15, Sanity, and Tailwind CSS for a seamless and scalable experience.
               </p>
             </div>
           </div>
@@ -68,17 +66,17 @@ const AppShowcase = () => {
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
                   src="/images/project2.png"
-                  alt="Library Management Platform"
+                  alt="Ecommerce Website"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>FOREVER - An Ecommerce Website</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/project3.png" alt="Weather App" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Weather Wander - A Weather Forecast App</h2>
             </div>
           </div>
         </div>
