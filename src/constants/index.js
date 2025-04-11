@@ -202,46 +202,40 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Started My Software Engineering Journey",
+    mentions: "Aug 2022",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "Began my BSc in Software Engineering at FAST NUCES, diving into programming fundamentals and software development. This marked the start of my journey as a developer.",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Completed My First Project",
+    mentions: "Mar 2024",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+      "Developed the Movie Recommendation System, my first full-stack project, using Node.js and MongoDB. This project taught me the basics of backend development and API integration.",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Earned a Web Development Certification",
+    mentions: "2024",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+      "Completed The Complete Web Development Bootcamp 2024 on Udemy, enhancing my skills in HTML, CSS, JavaScript, React.js, and other essential web development tools.",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Built a MERN Stack E-Commerce Platform",
+    mentions: "Dec 2024",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+      "Created the Forever E-Commerce Website using the MERN stack (React, Node.js, Express, MongoDB). This project helped me master full-stack development and user authentication.",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Developed ElevateX for Startups",
+    mentions: "Feb 2025",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+      "Built ElevateX, a startup directory platform, using Next.js 15, Sanity, and Tailwind CSS. This project advanced my skills in modern frameworks and scalable architecture.",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Achieved Academic Excellence",
+    mentions: "Aug 2022",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+      "Secured 3rd position in the Sargodha Board Intermediate Examination, scoring 1055/1100. This achievement highlighted my dedication and strong academic foundation.",
   },
 ];
 
