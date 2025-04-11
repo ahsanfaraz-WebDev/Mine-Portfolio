@@ -147,8 +147,9 @@ const techStackIcons = [
 const expCards = [
   {
     review: "Ahsan’s work on ElevateX demonstrates his ability to build scalable, enterprise-ready applications with modern technologies, delivering a seamless user experience.",
-    imgPath: "/images/exp1.png", // You’ll change this
-    logoPath: "/images/logo1.png", // You’ll change this
+    reviewer: "Dr. Khubaib Amjad",
+    reviewerTitle: "Professor of Software Engineering, FAST NUCES",
+    logoPath: "/images/logo1.png", // Unchanged
     title: "ElevateX: Startup Directory Platform",
     date: "Feb 2025",
     responsibilities: [
@@ -159,8 +160,9 @@ const expCards = [
   },
   {
     review: "Ahsan’s Forever E-Commerce project showcases his full-stack development skills, creating a responsive and user-friendly platform for online shopping.",
-    imgPath: "/images/exp2.png", // You’ll change this
-    logoPath: "/images/logo2.png", // You’ll change this
+    reviewer: "Dawood Hussain",
+    reviewerTitle: "Classmate, FAST NUCES",
+    logoPath: "/images/logo2.png", // Unchanged
     title: "Forever E-Commerce Website",
     date: "Dec 2024",
     responsibilities: [
@@ -171,8 +173,9 @@ const expCards = [
   },
   {
     review: "Ahsan’s Movie Recommendation System highlights his ability to build functional backend systems with a focus on user engagement and seamless API integration.",
-    imgPath: "/images/exp3.png", // You’ll change this
-    logoPath: "/images/logo3.png", // You’ll change this
+    reviewer: "Ms. Laiba Imran",
+    reviewerTitle: "Professor of Data Structures, FAST NUCES",
+    logoPath: "/images/logo3.png", // Unchanged
     title: "Movie Recommendation System",
     date: "Mar 2024",
     responsibilities: [
